@@ -14,4 +14,4 @@ if [ -z "${CATALOGUE_PORT}" ]; then
 fi
 
 
-/bin/node /app/server.js
+node /app/server.js
