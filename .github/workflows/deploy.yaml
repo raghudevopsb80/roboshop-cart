@@ -6,10 +6,12 @@ on:
     inputs:
       appVersion:
         required: true
+      appName:
+        required: true
 
 jobs:
   deploy:
     uses: raghudevopsb80/roboshop-github-actions/.github/workflows/deploy.yaml@main
     with:
       appVersion: "${{ github.event.inputs.appVersion }}"
-      appName: "roboshop-cart"
+      appName: "${{ github.event.inputs.appName }}"
