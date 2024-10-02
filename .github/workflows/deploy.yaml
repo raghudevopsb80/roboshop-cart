@@ -12,4 +12,4 @@ jobs:
     uses: raghudevopsb80/roboshop-github-actions/.github/workflows/deploy.yaml@main
     with:
       appVersion: "${{ github.event.inputs.appVersion }}"
-      appName: roboshop-cart
+      appName: "roboshop-cart"
